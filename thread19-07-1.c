@@ -1,33 +1,49 @@
-#include <stdio.h>       /* standard I/O routines                 */
+#include <stdio.h>
 #include <pthread.h>
-#include <stdlib.h>   /* pthread functions and data structures */
+#include <stdlib.h>
 
-/* function to be executed by the new thread */
 void* PrintHello(void* data)
-{
-    //int *p=(int *)data;
-    int my_data = *((int *)data);     	/* data received by thread */
+{   //sleep(1);
+
+    int my_data = *((int *)data);
+
+    printf("%d\n",pthread_self());
 
     pthread_detach(pthread_self());
-    printf("Hello from new thread - got %d\n", my_data);
-    pthread_exit(NULL);			/* terminate the thread */
+
+    printf("new thread sleeping !!Hello from new thread - got %d\n", my_data);
+  //  pthread_exit(&my_data);
 }
 
-/* like any C program, program's execution begins in main */
 int main(int argc, char* argv[])
 {
-    int        rc;         	/* return value                           */
-    pthread_t  thread_id;     	/* thread's ID (just an integer)          */
-    int        t         = 11;  /* data passed to the new thread          */
+    int rc;
+    pthread_t  thread_id;
+    int t=11;
 
-    /* create a new thread that will execute 'PrintHello' */
+    void **recv_data;
+
+
     rc = pthread_create(&thread_id, NULL, PrintHello,&t);
-    if(rc)			/* could not create thread */
+    if(rc)
     {
         printf("\n ERROR: return code from pthread_create is %d \n", rc);
         exit(1);
     }
-    printf("\n Created new thread %i ... \n", thread_id);
 
-    pthread_exit(NULL);		/* terminate the thread */
+    sleep(1);
+    printf("\n Created new thread %i ... \n", thread_id);
+    printf("%d\n",pthread_self());
+
+
+    //pthread_join(thread_id,&recv_data);
+
+    // int *mydatapointer;
+    // mydatapointer= (int *)recv_data;
+    // printf("recoved value from thread %d\n",*mydatapointer );
+
+
+
+
+  //  pthread_exit(NULL);		/* terminate the thread */
 }
