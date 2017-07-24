@@ -1,7 +1,9 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<pthread.h>
 #include<string.h>
-
+#include <sys/types.h>
+#include <dirent.h>
 
 typedef struct _thread_data{
     char name[20];
@@ -13,17 +15,32 @@ typedef struct _thread_data{
 
 void * read_and_count(void *file)
 {
-   thread_data *data_ptr= (thread_data*)file;
 
-  FILE *fp=fopen(data_ptr->name,"r");
+ //  printf("kamal\n");
+   thread_data *data_ptr = (thread_data*)file;
+
+  printf("path in thread %s\n",data_ptr->name);
+
+   FILE *fp=fopen(data_ptr->name,"r");
+   printf("after fp\n");
 
    char buff[10];
+   //set number of lines in a file, to Zero.
+   data_ptr->linecount=0;
 
+if(fp != NULL)
+{
    while(fgets(buff,10,fp) != NULL)
-  {
-      (data_ptr->linecount)++;
+   {
+      (data_ptr->linecount) ++;
+      printf("linen in iteration %d\n",data_ptr->linecount );
     }
- printf("#lines %d\n",data_ptr->linecount );
+
+}else
+  printf("file doesn't exist! NULL file pointer.  \n");
+
+
+  printf("#lines %d\n",data_ptr->linecount );
 
 }
 
@@ -34,25 +51,27 @@ int main()
     pthread_t thread_id[10];
 
     char current_dir[]="./textfiles/";
+
     DIR *directory;
     struct dirent *dir;
-    d=opendir(current_dir);
+    directory=opendir(current_dir);
 
     int iter=0;
 
-    thread_data *th_ptr[10]
+    thread_data *th_ptr[10];
 
-    while((dir=read(d)) != NULL){
+    while((dir=readdir(directory)) != NULL){
 
-        thread_data *th_ptr[iter]= malloc(sizeof(thread_data));
+        thread_data *th_ptr= malloc(sizeof(thread_data));
         char full_path[50];
 
         strcpy(full_path,current_dir);
         strcat(full_path,dir->d_name);
+        strcpy(th_ptr->name,full_path);
 
          printf("path is %s\n",full_path );
 
-        if( ! (create_thread(&thread_id[iter],NULL,read_and_count,th_ptr)) );
+        if( ! (pthread_create(&thread_id[iter],NULL,read_and_count,th_ptr)) );
             printf("thread creatted with id %d\n",iter);
 
 
@@ -61,15 +80,6 @@ int main()
  }
 
 
-
-
-
-
-
-
-
-
-
-
+ sleep(2);
 
 }
