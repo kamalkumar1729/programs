@@ -54,7 +54,7 @@ int main()
   //thread ids
   pthread_t thread_id[10];
 
-  char current_dir[]="./textfies/";
+  char current_dir[]="./textfiles/";
 
   DIR *directory;
   struct dirent *dir;
@@ -76,7 +76,7 @@ if(directory){
     strcat(full_path,dir->d_name);
     strcpy(th_ptr[iter]->name,full_path);
 
-   printf("path is %s\n",full_path );
+    printf("path is %s\n",full_path );
 
     if((pthread_create(&thread_id[iter],NULL,read_and_count,th_ptr[iter]))!= 0 ){
          printf("Unbale to create thread\n");

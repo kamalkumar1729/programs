@@ -1,0 +1,12 @@
+recursion : 1
+thread2.c
+thread19-07-1.c
+thread1.c
+recursion : 2
+koko.txt
+text4.txt
+ab.txt
+text1.txt.gz
+system internal file
+count_lines.c
+system internal file

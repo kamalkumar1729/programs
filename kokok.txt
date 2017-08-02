@@ -1,0 +1,171 @@
+recursion : 1
+thread2.c
+thread19-07-1.c
+thread1.c
+recursion : 2
+koko.txt
+text4.txt
+ab.txt
+text1.txt.gz
+abc.txt
+largetext.txt
+kamal.txt
+koko.txt.bak
+all.txt
+text2.txt.gz
+newfile.txt
+testtt
+myfile.txt
+text3.txt
+count_lines.c
+recursion : 3
+recursion : 4
+recursion : 5
+master
+recursion : 6
+recursion : 7
+HEAD
+master
+recursion : 8
+recursion : 9
+recursion : 10
+recursion : 11
+master
+recursion : 12
+recursion : 13
+HEAD
+master
+HEAD
+recursion : 14
+exclude
+COMMIT_EDITMSG
+packed-refs
+recursion : 15
+recursion : 16
+recursion : 17
+af6a1660e24e7e7dcf0a4275556b27fbf8a1ce
+recursion : 18
+e3862d0a6b2c129f8e50349fccc6349da02cc1
+recursion : 19
+1829ba1964395f7e2d380e256de2c7ca26506c
+recursion : 20
+cd052a8a9abe114f5729a00e2832b4801a2268
+recursion : 21
+a15904419d4d458bd4dd352509c3b91e88c70c
+recursion : 22
+1ef14b064718d654cb6fc2f9b36991482e8317
+recursion : 23
+ec473a1bacd6934a2708616115b3cff049bc08
+recursion : 24
+4d8f5feec2379fd9b12f5aa313836c7fdb689c
+90735c2e68b5f6ea2c21b6c78e2f456d5b90b7
+recursion : 25
+16a8f02da47ed31292870c721be25634ca81c3
+recursion : 26
+bfd88c889384253c8588eb1f921dd79f58e5f8
+recursion : 27
+acb9fa5de9b272bd79f5cc3b27f988b3890edd
+recursion : 28
+610d65d0e6eabd69632e0643a51391078289c6
+recursion : 29
+69c10654a53b8a2db158c8d5189f9d7a80cdf3
+recursion : 30
+recursion : 31
+dbee22e838ff3c813da65e35df9f74c9c3b682
+recursion : 32
+60bea9fe13db90b0254c48022e0a459f407bc0
+recursion : 33
+2aac1d2f811d359b640a6bbb05219970a0d0e4
+recursion : 34
+71f101b4fe722ed1f677a304759829208730eb
+recursion : 35
+0e771a7b1c9a01f950d8f16f843acbc7a76e44
+recursion : 36
+8321d8f6b26250cafa047c5411bdec463fbf08
+recursion : 37
+c1404cf74ac1f75c45c019059dcf0009817256
+recursion : 38
+be6cc33041c68db0c7bec0e0f9bc3180174108
+recursion : 39
+1c099494d90304ad306d6328f2c33059fb1b93
+recursion : 40
+e8e3920642beec0fbfcfec6d7345c244d00c11
+recursion : 41
+9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+recursion : 42
+b4e06d2f506a62a1c6f5282e5974f361861293
+recursion : 43
+69bde247743a9afcbd78d63d3e6af7233f4242
+recursion : 44
+57ecf972fbc6d15d80bbbc112fae3d36e9f0a2
+recursion : 45
+a9c053dc1b22deaaf8e530f897e8b25a156612
+recursion : 46
+b5850c0cc561dd80162d2542fc76a97b303ed8
+recursion : 47
+066f2b5c6245e265542c3dc5802e98294e799f
+recursion : 48
+ab7ccc08ddec1aebff5d8cbe4446bf9338a86c
+recursion : 49
+592e0e31f5e12a9dece41d452202669b74af47
+recursion : 50
+d646f0340d6f92c5e582435156f5db111f6207
+recursion : 51
+1e99064eaa1e69467416b147cc5a0348fc9226
+recursion : 52
+69b4bb9dc68dfa660731c498948c18e41bced1
+recursion : 53
+3b8fcda82c3fe36deb7862924af0afed92c106
+recursion : 54
+recursion : 55
+d5812113344be66e6008e8c11b71fb723a3d79
+recursion : 56
+9daedc7e0e9f66cefcebceff39b343e8be7cef
+recursion : 57
+83c47727e32fe25576375fc321fe7269a283a9
+recursion : 58
+10198975c3fcd147ecb233838d0ad45a94d7e8
+recursion : 59
+4af72bf54e1819529bf2646ddd29b83fcbfbf5
+recursion : 60
+65a788cfe3fdacc664351b257a661ebda750bd
+1c257f11e72285fc5e0479b334661f1b3437f5
+recursion : 61
+4e8c1634a667a38bd1b5cf3818103a16ca1009
+recursion : 62
+a0dfcb44eed2f8bf128fb8246e6b513fa8bdab
+recursion : 63
+84067104c09f1f153182d9c4154d02dbde9db3
+recursion : 64
+8af5148bc8bb171ba838978c14f4397d44ae8e
+b72d1fc4ab8683d808c5c19b9669a613ad525e
+recursion : 65
+b85e7cb49c772921dac9a127da06477757adb6
+recursion : 66
+post-update.sample
+pre-push.sample
+prepare-commit-msg.sample
+commit-msg.sample
+update.sample
+applypatch-msg.sample
+pre-applypatch.sample
+pre-commit.sample
+pre-rebase.sample
+HEAD
+index
+description
+config
+kamal
+kokok.txt
+fileread2.c
+README.md
+systemcheck.c
+mutex1_20_07.c
+mutex_20_07.c
+thread19-07-2.c
+allfilesrecursive.c
+a.out
+output.txt
+direntfile.c
+allfiles.c
+fileread.c
